@@ -1,6 +1,6 @@
 [submodule "addon-bruderpy"]
 	path = addon-bruderpy
-	url = git@github.com:gregod/addon-bruderpy
+	url = https://github.com/gregod/addon-bruderpy.git
 [submodule "addon-usbhid-to-mqtt"]
 	path = addon-usbhid-to-mqtt
-	url = git@github.com:gregod/addon-usbhid-to-mqtt
+	url = https://github.com/gregod/addon-usbhid-to-mqtt.git

@@ -1,0 +1,36 @@
+{
+    "name": "USB Hid to Mqtt",
+    "version": "0.8",
+    "slug": "usbhid-to-mqtt",
+    "description": "Submits token entered via usb hid to mqtt topic",
+    "url": "https://github.com/gregod/addon-usbhid-to-mqtt/tree/master/usbhid-to-mqtt",
+    "startup": "application",
+    "arch": [
+        "aarch64",
+        "amd64",
+        "armhf",
+        "armv7",
+        "i386"
+    ],
+    "boot": "auto",
+    "apparmor": false,
+    "full_access": true,
+    "hassio_role": "homeassistant",
+    "privileged": [
+            "SYS_ADMIN",
+            "SYS_RAWIO"
+    ],
+    "schema":  {
+        "device" : "str",
+        "mqtt_connection_string" : "str",
+        "mqtt_topic" : "str",
+        "max_token_length" : "int(1,100)"
+    },
+    "options" : {
+        "mqtt_connection_string" : "mqtt://homeassistant",
+        "device" : "/dev/input/event2",
+        "mqtt_topic" : "usbhid/tokens",
+        "max_token_length" : 10
+    },
+    "image": "gregod/{arch}-addon-usbhid-to-mqtt"
+  }

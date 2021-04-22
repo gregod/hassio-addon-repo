@@ -1,6 +1,6 @@
 {
     "name": "USB Hid to Mqtt",
-    "version": "0.9.1",
+    "version": "1.0.0",
     "slug": "usbhid-to-mqtt",
     "description": "Submits token entered via usb hid to mqtt topic",
     "url": "https://github.com/gregod/addon-usbhid-to-mqtt/tree/master/usbhid-to-mqtt",
